@@ -1,0 +1,338 @@
+<html>
+<head>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="logo.ico">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+<script type="text/javascript" src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+ 
+
+<script>
+function  valform1()
+{
+	var x = document.forms["loginform1p"]["uid"].value;
+	var y = document.forms["loginform1p"]["password"].value;
+	if (x=="")
+	{
+		alert("Login Id Should be not be empty");
+		return false;
+	}
+	if (y=="")
+	{
+		alert("Password Should be not be empty");
+		return false;
+	}
+	// if (x=="Ruhan" && y=="XYZ123")
+	// {
+	// 	window.open("test.html")
+	// }
+}
+// // function open()
+// {
+//  window.open("signup.html")
+// }
+
+</script>
+<style>
+body{
+color:white;
+font-family:'Montserrat',sans-serif;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(book9.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+
+}
+.regform{
+	height: 60vh;
+	width:400px;
+    position: fixed;
+    right: -100%;
+    background: orange;
+    z-index: 999999;
+    
+    transition:0.8s all ease;
+     top: 50%;
+    transform: translateY(-50%);
+}
+.visibleReg{
+	right:0%;
+}
+.close-reg{
+	padding-top:10px;
+	cursor:pointer;
+
+}
+.logox{
+	height:57px;
+}
+
+.navbar-style{
+	box-shadow:5px 10px 5px 10px #efefef;
+}
+{
+	background-color:transparent;
+	color:gray;
+
+}
+
+.ru{
+	font-size: 16px;
+	transition: 0.7s ease;
+}
+.registernow{
+	background-color :transparent !important;
+	font-family:'Montserrat';
+	border: none;
+	margin-top: 14px;
+    padding: 0px 10px;
+}
+.ru:hover{
+	background-color :transparent !important;
+	 color:white;
+	 border:white;
+	}
+.r1{
+	
+	display:inline-block;
+}
+.notice{
+	
+	border:1px solid white;
+}
+.container1{
+	border:1px solid white;
+}
+.remainx
+{
+	border:1px solid white;
+	    height: 105px;
+}
+.mute
+{
+	
+	border:1px solid white;
+
+}
+@media only screen and (max-width: 1336px){
+	.cimages{
+		width:1336px !important;
+	}
+
+}
+@media only screen and (max-width: 1440px){
+	.cimages{
+		width:1440px !important;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+	.regform{
+		width:50%;
+	}
+	.textwrap{
+		    font-size: 12px !important;
+	}
+	.cimages{
+		height:90px !important;
+
+	}
+	.registerNow{
+		margin-bottom:7px;
+
+	}
+	.video1{
+		height: inherit;
+		width:inherit;
+	}
+}
+
+
+</style>
+<title >E-LEARNING PORTAL
+</title>
+<link href="style.css" rel="stylesheet" type"text/css">
+</head>
+<body>
+
+<nav class="navbar-style navbar-inverse navbar-fixed-top">
+  <div class="container">
+  	<div class="col-md-3 col-xs-10 regform">
+  		<i class='fa fa-close close-reg'></i>
+  		 <div class="container">
+ 
+     
+		 		 
+		 </div>
+</div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <img src="images/logo1.png" style="height: 59px;" class="logox animated fadeInDown">
+   	  <div class="animated fadeInDown hvr-bob"style="font-size: 19px; display:inline-block ;font-weight: bold;">E-Learning Portal</div>
+    </div>
+      <div class="collapse navbar-collapse menu" id="micon">
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a class="ru hvr-bob" href="#">Home</a></li>
+        <li ><a  class="ru hvr-bob " href="#">Exam</a></li>
+        <li ><button class="ru registerNow hvr-bob  ">Register</button>
+        <li ><a  class="ru hvr-bob" href="#">About</a></li>
+  
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <br> -->
+<br>
+<br>
+<br>
+<br>
+<!-- <br> -->
+<!-- </br> -->
+
+<div  class="col-md-12 xol-xs-12">		
+<h4><font face="Segoe Print" color="white"><marquee>Education is the key to the future: You've heard it a million times, and it's not wrong. Educated people have higher wages and lower unemployment rates, and better-educated countries grow faster and innovate more than other countries. But going to college is not enough. You also have to study the right subjects.</marquee></font></h4>
+<br>
+</div>
+	<!-- <div class="col-md-12">" -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="c1.jpg" class="cimages" style="height: 125px; width: 100%; alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="c2.jpg" class="cimages" style="height: 125px; width: 100%; alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="c3.jpg" class="cimages" style="height: 125px; width: 100%; alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+
+		<div style="text-align:center;" class="col-md-8 col-xs-12 container1"> 
+			 
+			<!-- &nbsp;<span style="font-size: 25px;">LOG IN</span><br><br> -->
+				
+			
+		
+			<div class="login2">
+				&nbsp;<span style="font-size: 25px;">LOG IN</span><br><br>
+				<form name="loginform1p" onsubmit="valform1()" action="#action" method="post">
+		 		<span style="font-size: 19">Login ID:</span>&nbsp;&nbsp;&nbsp;
+				<input type="textfield" id="loginbox" name="uid" autocomplete="off"><BR><br>
+		 		<span style="font-size: 19" >Password:</span>
+				<input type="password" id="passwordbox" name="password"> <br><br>
+				<input type="submit" name="submit" value="Submit" class="submit" >
+				<input type="RESET" name="RESET" class="reset"> <br><BR>
+				</form>
+			</div>
+			
+ <!-- class="cimages" style="height: 135px; width: 1024px; -->
+		</div>
+        <!-- <div class="logintitle">  -->
+		<!-- LOG IN -->
+		<!-- </DIV><br> -->
+		
+		<!-- <div class="login"> -->
+		<!-- <form name="loginform" onsubmit="return valform1() "action="#action" method="post"> -->
+		 <!-- Login ID: -->
+		<!-- <input type="textfield" id="loginbox" name="uid" autocomplete="off"><BR><br> -->
+		 <!-- Password: -->
+		<!-- <input type="password" id="passwordbox" name="password"> <br><br> -->
+		<!-- <input type="submit" name="submit" value="Submit" class="submit" > -->
+		<!-- <input type="RESET" name="RESET" class="reset"> <br><BR> -->
+		<!-- </div> -->
+		<!-- </form> -->
+		
+		<!-- <ul class="fix"> -->
+		<!-- <li><a href="signup.html">Sign Up</li></a> -->
+	
+		
+		
+		<div  style="height: 105px;"class="col-md-4 col-xs-6 notice">
+
+			
+		<span style="font-size:20px; display:block; margin:auto!important;">Notices</span>
+
+		<marquee style="height: 79px;" behavior=scroll scrollamount="2" direction="up"  >
+		<ul >
+		<li><a class="r1" href="seittt.html"><b>SE-IT Time Table</b></a></li><br>
+		<li><a class="r1" href="teittt.html"><b>TE-IT Time Table</b></a></li><br>
+		<li><a class="r1" href="bettt.html"><b>BE-IT Time Table</b></a></li><br>
+		</ul>
+		</marquee>
+		</div>
+		</div>
+		
+		<div class="col-md-4 col-xs-6 remainx">
+		<ul style="height: 89px;list-style: none; ">
+		<li><a href="feedback.html"><b>Feedback</b></a></li><br>
+		<li><a href="F.A.Q.html"><b>F.A.Q</b></a></li><br>
+		<li><a href="about.html"><b>ABOUT</b></a></li><br>
+		</ul>
+		</div> 
+	<!-- </div> -->
+		
+		<div Style="text-align:center;"class="col-xs-12 col-md-12 mute">
+			<p><b style="font-size: 25px;">Introduction to E-Learning</b></p>
+			
+			<iframe class="video1" width="400" height="200" src="https://www.youtube.com/embed/viHILXVY_eU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+
+			<p class="textwrap"style=" text-align: justify; height:auto; font-size: 20px;">E-Learning is the employment of technology to aid and enhance learning. It can be as simple as High School students watching a video documentary in class or as complex as an entire university course provided online. e-Learning began decades ago with the introduction of televisions and over-head projectors in classrooms and has advanced to include interactive computer programmes, 3D simulations, video and telephone conferencing and real-time online discussion groups comprised of students from all over the world. As technology advances, so does e-learning, making the possibilities endless.</p>
+		</div>
+
+		</div>
+
+		
+		<script>
+			$(document).ready(function(){
+				$('.registernow').click(function(){
+							$('.regform').addClass("visibleReg")
+
+				});
+				$('.close-reg').click(function(){
+							$('.regform').removeClass("visibleReg")
+				});
+
+			});
+			
+		</script>
+
+	
+
+
+</body>
+</html>

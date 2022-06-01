@@ -1,0 +1,190 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="logo.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+<title>Exams!!
+</title>
+
+<script>
+function despacito()
+{
+	var marks=0, qsolv=0;
+	if(document.getElementById('high').checked || document.getElementById('long').checked || document.getElementById('none').checked )
+	{
+		marks=marks-1;
+		qsolv++;
+	}
+	
+	if(document.getElementById('large').checked)
+	{
+		marks=marks+2;
+		qsolv++;
+	}
+
+	if(document.getElementById('eur').checked || document.getElementById('asia').checked || document.getElementById('aus').checked )
+	{
+		marks=marks-1;
+		qsolv++;
+	}
+	
+	if(document.getElementById('afr').checked)
+	{
+		marks=marks+2;
+		qsolv++;
+	}
+	
+	if(document.getElementById('phy').checked || document.getElementById('eco').checked || document.getElementById('lit').checked )
+	{
+		marks=marks-1;
+		qsolv++;
+	}
+	
+	if(document.getElementById('all').checked)
+	{
+		marks=marks+2;
+		qsolv++;
+	}
+	
+	if(document.getElementById('lab').checked || document.getElementById('ku').checked || document.getElementById('dem').checked )
+	{
+		marks=marks-1;
+		qsolv++;
+	}
+	
+	if(document.getElementById('naz').checked)
+	{
+		marks=marks+2;
+		qsolv++;
+	}
+	
+	if(document.getElementById('pol').checked || document.getElementById('sho').checked || document.getElementById('sno').checked )
+	{
+		marks=marks-1;
+		qsolv++;
+	}
+	
+	if(document.getElementById('hor').checked)
+	{
+		marks=marks+2;
+		qsolv++;
+	}
+	if( qsolv!=5)
+	{
+		alert("Please Attempt All Question!!")
+	}
+	if(qsolv==5)
+	{
+		if(marks==10)
+		{
+			alert("Congratulation! You Successfully Answered All Question Correctly! Your Score is Perfect '10'")
+			
+		}
+		else
+		{
+			alert("Your Score is"+" "+marks+" "+ "Thanks For Taking The Exam!")
+		}
+	
+	}
+}
+</script>
+<style>
+body{
+color:white;
+font-family:"comic sans ms";
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(book9.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+
+	
+}
+.home{
+	text-align: center;
+}
+.formg{
+	width:40%;
+	margin:auto !important;
+	display:block !important;
+	
+	
+}
+@media only screen and (min-width: 1024px){
+	.formg{
+		
+	}
+}
+@media only screen and (max-width: 425px){
+	.formg{
+		margin-left: 20px !important;
+	}
+	.ex{
+		font-size: 25px !important;
+	}
+	.bn{
+		width:20% !important;
+	}
+}
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	
+		<div class="col-xs-12 col-md-12 logo">
+		<img src="images/logo1.png"/>
+		<h1><span class="ex">E-learning Portal</span></h1>
+		</div>
+		<div class="col-xs-12 col-md-12 home"><a href="index.html" style="color:white; border:2px solid; padding:5px 10px;">Home</a></div><br></br>
+	
+	<div  class="col-md-12" style="text-align: center;">
+    <b > Multiple choice Type Questions Based on General Knowledge<br>5 Question Will Be Asked For a Total of 10 Marks With Negative Marking.<br>10 Minutes Will Be Alloted For Completing The Exam.</b><br>
+    </div>
+    	<div class="col-md-12 col-xs-12">
+    <form class=" formg" name="Myform1">
+	Q1:Grand Central Terminal,Park Avenue,New York is World's?<br>
+	<input type="radio" name="Q1" id="large">Largest Railway Station<br>
+	<input type="radio" name="Q1" id="high">Hightest Railway Station<br>
+	<input type="radio" name="Q1" id="long">Longest Railway Station<br>
+	<input type="radio" name="Q1" id="none">None of the Above<br><br>
+	
+	Q2:Eritrea,Which became the 182nd member of the UN in 1993,is in the continent?<br>
+	<input type="radio" name="Q2" id="asia">Asia<br>
+	<input type="radio" name="Q2" id="afr">Africa<br>
+	<input type="radio" name="Q2" id="eur">Europe<br>
+	<input type="radio" name="Q2" id="aus">Australia<br><br>
+	
+	Q3:For which of the following disciplines is Nobel Prize Awarded?<br>
+	<input type="radio" name="Q3" id="phy">Physics and Chemistry<br>
+	<input type="radio" name="Q3" id="eco">Physiology and Economics<br>
+	<input type="radio" name="Q3" id="lit">Literature and Peace<br>
+	<input type="radio" name="Q3" id="all">All of the Above<br><br>
+	
+	Q4:Hitler Party which came into power in 1933 is known as?<br>
+	<input type="radio" name="Q4" id="lab">Labour Party<br>
+	<input type="radio" name="Q4" id="naz">Nazi Party<br>
+	<input type="radio" name="Q4" id="ku">Ku-Klux-Klan<br>
+	<input type="radio" name="Q4" id="dem">Democratic Party<br><br>
+	
+	Q5:Epsom(England) is tyhe place associated with<br>
+	<input type="radio" name="Q5" id="hor">Horse Racing<br>
+	<input type="radio" name="Q5" id="pol">polo<br>
+	<input type="radio" name="Q5" id="sho">Shooting<br>
+	<input type="radio" name="Q5" id="sno">Snooker<br><br>
+	</form>
+	</div>
+
+	
+	<button class="bn" style="background: transparent; width: 10%;
+    margin: auto;
+    display: block;
+    padding: 10px;" onclick="despacito()">Result</button>
+	
+	
+	
+
+</body>
+</html>

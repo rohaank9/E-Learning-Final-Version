@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="animate.css">
+</head>
+<body id="home">
+	<div class="col-xs-12 outerMain">
+		<i class="fa fa-arrow-left visible-xs" style="display: block;"></i>
+		<i class="fa fa-bars visible-xs" style="position: fixed;z-index: 9;cursor: pointer; color: white;left: 25px;top: 30px;font-size: 25px;"></i>
+		<div class="logo col-md-3 col-xs-3">
+			<img src="images/logo1.png">
+		</div>
+		<div class="menu col-md-9 col-xs-9">
+			<ul>
+				<li><a class="scroll" href="#home">Home</a></li>
+				<li><a class="scroll" href="#about">About</a></li>
+				<li><a class="scroll" href="#team">Team</a></li>
+				<li><a class="scroll" href="#contact">Contact</a></li>
+				<button class="btn btn-warning registerNow">Register</button>
+			</ul>	
+		</div>
+	</div>
+	<!-- registration form starts here -->
+	<div class="registration">
+		<i class="fa fa-close" style="cursor:pointer;color: red"></i>
+		<form action="register.php" method="post">
+			<div class="form-group">
+				<label class="form_labelled">Enter name</label>
+				<input type="text" class="form-control" id="name" name="reg_name">
+			</div>
+			<div class="form-group">
+				<label class="form_labelled" for="email">Contact</label>
+				<input type="text" class="form-control" id="number" name="reg_contact">
+			</div>
+			<div class="form-group">
+				<label class="form_labelled" for="email">Email address</label>
+				<input type="email" class="form-control" id="email" name="reg_email">
+			</div>
+			<div class="form-group">
+				<label class="form_labelled">Password</label>
+				<input type="Password" class="form-control" id="Password" name="reg_password">
+			</div>
+			<div class="form-group">
+				<label class="form_labelled">Confirm Password</label>
+				<input type="Password" class="form-control" id="ConfirmPassword" name="reg_confirm_password">
+			</div>
+			<div class="form-group">
+				<label for="comment" style="margin-right: 5px;">Gender</label>
+				<input type="radio" name="Gender"value="Male"style="margin-right: 5px;"><i class="fa fa-male" style="margin-right: 15px;"></i>
+				<input type="radio" name="Gender"value="Female"style="margin-right: 5px;"><i class="fa fa-female"style="margin-right: 5px;"></i>
+			</div>
+			<button class="btn btn-primary" type="Submit" onclick="return validate()" style="width: 100%">Submit</button>
+		</form>		
+	</div>
+	<!-- registration form ends here --> 
+	
+
+	<div class="banner col-xs-12">
+		<div>
+			<p class="wow zoomIn">Welcome To <span>E-Learning!</span></p>	
+			<p class="wow bounceInUp" data-wow-delay="1s">UNDERSTANDING TECHNOLOGY</p>
+		</div>
+	</div>
+	<div id="about" class="col-xs-12 aboutSection"><p>About Us</p>
+		<div class="col-md-6 col-xs-12 aboutImg">
+			<center><img src="images/aboutImg.jpg" class="wow flipInX"></center>
+		</div>
+		<div class="col-md-6 col-xs-12 aboutContent">
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</div>
+	</div>
+	<div class="middle col-xs-12">
+		<div class="notice col-md-6 col-xs-12 wow slideInLeft">
+			<div class="col-xs-12">
+				<center><h2><marquee behavior=alternate>Lastest Notice</marquee></h2></center>
+				<p>
+					<center class="tt">
+						<a href="#0">S.E Time Table</a></br>
+						<a href="TE.html" target="_blank">T.E Time Table</a></br>
+						<a href="#0">B.E Time Table</a>
+					</center>
+				</p>
+
+				<h3><center style="color: #ce0767">Notice</center></h3>
+
+				<marquee direction="up">
+					<p>
+						<center style="text-align: justify;padding: 40px;color:white">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</center> 
+					</p>
+				</marquee>
+			</div>
+		</div>
+		<div class="login col-md-6 col-xs-12 wow slideInRight" data-wow-delay="0.8s">
+			<div class="col-xs-12"> 
+				<form name="myform">
+					<center>
+						<img src="login.png" width="60" height="68" style="margin-top: 8px;">
+						<h3 style="margin-top: 5px;color:#ce0767;">Login</h3>
+						<form>
+							<label style="color:#ce0767;">Username</label><input type="text" placeholder="Name" name="fname" required/><br><br>
+							<label style="color:#ce0767;">Password</label><input type="Password" placeholder="Password" name="pass" required/><br><br>
+							<input type="Submit" value="Submit" onclick="return myfun()"/>
+						</form>
+					</center>
+				</form>	
+			</div>	
+		</div>
+	</div>
+	<section>
+
+		<div id="team" class="col-xs-12 team ">
+			<p>OUR TEAM</p>
+			<div class="col-xs-12 col-md-4 wow slideInLeft">
+				<div class="col-xs-12 box farhan">
+					<img src="images/farhan.png">
+					<p>FARHAN</p>
+				</div>
+				
+			</div>	
+			<div class="col-xs-12 col-md-4 wow zoomIn" data-wow-delay="0.55s">
+				<div class="col-xs-12 box obei">
+					<img src="images/obei.jpg">
+					<p>OBEI</p>
+				</div>
+				
+			</div>	
+			<!-- <div class="col-xs-12 col-md-3 wow zoomIn" data-wow-delay="1s">
+				<div class="col-xs-12 box">
+					
+				</div>
+				
+			</div>	 -->
+			<div class="col-xs-12 col-md-4 wow slideInRight" data-wow-delay="1.5s">
+				<div class="col-xs-12 box mustafa">
+					<img src="images/mustafa.jpg">
+					<p>MUSTAFA</p>
+				</div>
+				
+			</div>			
+		</div>
+	</section>
+	<footer class="footer">
+		<div id="contact" class="col-xs-12 contact_img">
+			<div class="col-xs-12">
+				<p>CONTACT</p>	
+			</div>
+			<div class="col-xs-12">
+				<div class="col-md-4 col-xs-12 map">
+					<p>ADDRESS</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.160671485051!2d72.82883621446604!3d18.968510287149673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce40ffcfcacd%3A0x5d71ff22760f8e77!2sM.H.+Saboo+Siddik+College+of+Engineering!5e0!3m2!1sen!2sin!4v1536929557931" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-4 col-xs-12 message">
+					<p>LEAVE A MESSAGE</p>
+					<form>
+						<div class="form-group col-md-12">
+							<label class="form_labelled">Enter name</label>
+							<input type="text" class="form-control" id="name">
+						</div>
+						<div class="form-group col-md-6">
+							<label class="form_labelled" for="email">Email address</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group col-md-6">
+							<label class="form_labelled" for="email">Contact</label>
+							<input type="text" class="form-control" id="number">
+						</div>
+						<div class="form-group col-md-12">
+							<label class="form_labelled" for="comment">Your message</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+
+						<center><button class="btn btn-default">Submit</button></center>
+					</form>		
+				</div>
+				<div class="col-md-4 col-xs-12 chat">
+					<p>HAVE A CHAT</p>
+					<i class="fa fa-phone" style="color: white ; font-size: 20px;"></i><span style="color: white; font-size: 20px;">&nbsp&nbspPhone</span>
+					<p style="color: white; font-size: 15; margin-bottom: 20px;">+91-7506414291</p>
+				<!-- 	<p style="color: white;">+91-9167080946</p>
+					<p style="color: white;">+91-9819170709</p> -->
+					<i class="fa fa-envelope" style="color: white; font-size: 20px;"></i><span style="color: white; font-size: 20px;">&nbsp&nbspEmail</span>
+					<p style="color: white; font-size: 15;">mohdobeiansari@gmail.com</p>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>	
+</footer>
+</body>
+</html>
+#Javascript Code
+<script type="text/javascript">
+	function myfun()
+	{
+		var x=document.forms["myform"]["fname"].value;
+		var y=document.forms["myform"]["pass"].value;
+		if(x=="obei")
+		{
+			if(y=="obei123")
+			{
+				alert("Both Correct");
+				window.open("exam.html")
+			}		
+		}
+		else
+		{
+			alert("Username or Password incorrect, Please try again");
+		}
+
+	}
+	function validate()
+	{
+		//alert('call');
+		var password = document.getElementById("Password").value;
+		var confirmpassword = document.getElementById("ConfirmPassword").value;
+		if (password == confirmpassword)
+		{
+			return true;
+
+		}
+		else
+		{
+			alert("Password is wrong");
+			return true;
+		}
+	}
+
+</script>
+<script>
+	$(document).ready(function(){
+		$(window).on('scroll', function(){
+
+			if ($(window).scrollTop())
+			{
+				$('.outerMain').addClass('black');
+			}
+			else
+			{
+				$('.outerMain').removeClass('black');
+			}
+
+		});
+		$('.registerNow').click(function(){
+					//alert('');
+					$('.registration').addClass('showForm');
+				});
+		$('.registration > i:first-child').click(function(){
+			$('.registration').removeClass('showForm');
+		});
+		$('input').focus(function(){
+			$(this).prev().removeClass('form_labelled');
+		});
+		$('input').blur(function(){
+			if($(this).val() == '') 
+			{
+				$(this).prev().addClass('form_labelled');
+
+			}
+			else
+			{
+				$(this).prev().removeClass('form_labelled');
+			}
+
+		});
+		$('textarea').focus(function(){
+			$(this).prev().removeClass('form_labelled');
+		});
+		$('textarea').blur(function(){
+			if($(this).val()=='')
+			{
+				$(this).prev().addClass('form_labelled');
+			}
+			else
+			{
+				$(this).prev().removeClass('form_labelled');
+			}
+		});
+
+		var scrollLink = $('.scroll');
+			//smooth scrolling
+			scrollLink.click(function(event){
+				event.preventDefault();
+				$('body,html').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000 );
+
+			});
+			$('.fa-bars').click(function(){
+				$('.outerMain').addClass('showMenu');
+			});
+			$('.fa-arrow-left').click(function(){
+				$('.outerMain').removeClass('showMenu');
+			});
+		});
+	</script>
